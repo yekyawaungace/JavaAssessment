@@ -90,6 +90,7 @@ public class BookService implements IBookService {
         return true;
     }
 
+    @Override
     @Transactional
     public Page<Book> getPaginatedBooks(int page) {
         return bookRepository.findAll(PageRequest.of(page, 10));

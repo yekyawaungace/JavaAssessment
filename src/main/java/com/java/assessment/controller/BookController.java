@@ -1,6 +1,7 @@
 package com.java.assessment.controller;
 
 
+import com.java.assessment.dto.BookPageResponse;
 import com.java.assessment.entity.Author;
 import com.java.assessment.entity.Book;
 import com.java.assessment.service.IBookService;
@@ -91,11 +92,23 @@ public class BookController {
     }
 
     @GetMapping("/page")
-    public ResponseEntity<Page<Book>> getPaginated(@RequestParam(name = "page",defaultValue = "0") int page) {
-        logger.info("Fetching page {}", page);
-        Page<Book> books = bookService.getPaginatedBooks(page);
-        logger.info("Page size: {}", books.getContent().size());
-        return ResponseEntity.ok(books);
+    public ResponseEntity<BookPageResponse> getPaginated(@RequestParam(name = "page", defaultValue = "0") int page) {
+        logger.info("Fetching page request: {}", page);
+
+        Page<Book> books = bookService.getPaginatedBooks(page-1);
+
+        // Wrap into custom DTO
+        BookPageResponse response = new BookPageResponse(
+                books.getNumber() + 1,             // Convert to 1-based
+                books.getTotalPages(),
+                books.getTotalElements(),
+                books.getNumberOfElements(),
+                books.hasNext(),
+                books.hasPrevious(),
+                books.getContent()
+        );
+
+        return ResponseEntity.ok(response);
     }
 
 

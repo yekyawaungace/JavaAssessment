@@ -1,5 +1,10 @@
 # JavaAssessment
 
+
+# firstly run testdb_authors.sql and testdb_books.sql file in testdb folder in mysql db.
+
+# import JavaAssessment.postman_collection.json in postman
+
 # 📚 Book Management API (Spring Boot)
 
 A RESTful Spring Boot application for managing books and their authors. This project demonstrates CRUD operations, service layer abstraction, external API calling using `RestTemplate`, and unit testing using JUnit 5 and Mockito.

@@ -3184,3 +3184,374 @@ java.lang.IllegalArgumentException: URI is not absolute
 2025-06-21T12:04:12.023+07:00  INFO 24656 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-06-21T12:04:12.050+07:00  INFO 24656 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.AuthorController        : Fetching all author by id :  1 
 2025-06-21T12:04:12.167+07:00  INFO 24656 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.AuthorController        : Author fetched: Author(id=1, name=John)
+2025-06-21T12:06:14.361+07:00  INFO 24656 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:06:14.609+07:00  INFO 24656 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:06:14.609+07:00  INFO 24656 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:06:14.619+07:00  INFO 24656 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:06:14.630+07:00  INFO 24656 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:22:11.493+07:00  INFO 16792 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 16792 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:22:11.499+07:00  INFO 16792 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:22:12.392+07:00  INFO 16792 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:22:12.464+07:00  INFO 16792 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:22:13.011+07:00  INFO 16792 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:22:13.022+07:00  INFO 16792 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:22:13.022+07:00  INFO 16792 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:22:13.080+07:00  INFO 16792 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:22:13.080+07:00  INFO 16792 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1525 ms
+2025-06-21T12:22:13.281+07:00  INFO 16792 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:22:13.352+07:00  INFO 16792 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:22:13.393+07:00  INFO 16792 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:22:13.655+07:00  INFO 16792 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:22:13.683+07:00  INFO 16792 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:22:13.830+07:00  INFO 16792 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fcd0e8d
+2025-06-21T12:22:13.831+07:00  INFO 16792 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:22:13.861+07:00  WARN 16792 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:22:13.861+07:00  WARN 16792 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:22:13.877+07:00  INFO 16792 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:22:14.463+07:00  INFO 16792 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:22:14.501+07:00  INFO 16792 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:22:15.089+07:00  WARN 16792 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:22:15.137+07:00  INFO 16792 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:22:15.586+07:00  INFO 16792 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:22:15.592+07:00  INFO 16792 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 4.649 seconds (process running for 5.227)
+2025-06-21T12:22:23.936+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:22:23.936+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:22:23.937+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-21T12:22:24.083+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Book have been created Successfully : B002
+2025-06-21T12:22:28.727+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Fetching all books
+2025-06-21T12:22:28.862+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Book fetched: 2
+2025-06-21T12:22:41.428+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Book have been created Successfully : B001
+2025-06-21T12:22:43.430+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-4] c.j.a.controller.BookController          : Fetching all books
+2025-06-21T12:22:43.435+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-4] c.j.a.controller.BookController          : Book fetched: 3
+2025-06-21T12:22:52.955+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : start Book selectbyId  : 3
+2025-06-21T12:22:52.972+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Book selectbyId  : 3
+2025-06-21T12:22:56.793+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-7] c.j.a.controller.BookController          : Fetching page 1
+2025-06-21T12:22:56.826+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-7] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:22:56.834+07:00  WARN 16792 --- [Assessment] [http-nio-8080-exec-7] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-06-21T12:24:10.702+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-8] c.j.a.controller.BookController          : Fetching page 1
+2025-06-21T12:24:10.711+07:00  INFO 16792 --- [Assessment] [http-nio-8080-exec-8] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:25:11.634+07:00  INFO 16792 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:25:11.783+07:00  INFO 16792 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:25:11.783+07:00  INFO 16792 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:25:11.783+07:00  INFO 16792 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:25:11.799+07:00  INFO 16792 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:25:18.744+07:00  INFO 24840 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 24840 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:25:18.746+07:00  INFO 24840 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:25:19.775+07:00  INFO 24840 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:25:19.850+07:00  INFO 24840 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:25:20.475+07:00  INFO 24840 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:25:20.488+07:00  INFO 24840 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:25:20.488+07:00  INFO 24840 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:25:20.543+07:00  INFO 24840 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:25:20.543+07:00  INFO 24840 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1737 ms
+2025-06-21T12:25:20.758+07:00  INFO 24840 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:25:20.832+07:00  INFO 24840 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:25:20.863+07:00  INFO 24840 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:25:21.093+07:00  INFO 24840 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:25:21.131+07:00  INFO 24840 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:25:21.321+07:00  INFO 24840 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f24ce45
+2025-06-21T12:25:21.327+07:00  INFO 24840 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:25:21.352+07:00  WARN 24840 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:25:21.352+07:00  WARN 24840 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:25:21.374+07:00  INFO 24840 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:25:21.955+07:00  INFO 24840 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:25:21.993+07:00  INFO 24840 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:25:22.633+07:00  WARN 24840 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:25:22.675+07:00  INFO 24840 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:25:23.146+07:00  INFO 24840 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:25:23.153+07:00  INFO 24840 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 4.961 seconds (process running for 5.535)
+2025-06-21T12:25:27.168+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:25:27.168+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:25:27.168+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-21T12:25:27.205+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Fetching page 1
+2025-06-21T12:25:27.299+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Booking Page size: Page 2 of 1 containing UNKNOWN instances
+2025-06-21T12:25:27.299+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:25:27.333+07:00  WARN 24840 --- [Assessment] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-06-21T12:25:46.628+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-8] c.j.a.controller.BookController          : Fetching all books
+2025-06-21T12:25:46.655+07:00  INFO 24840 --- [Assessment] [http-nio-8080-exec-8] c.j.a.controller.BookController          : Book fetched: 3
+2025-06-21T12:26:34.914+07:00  INFO 24840 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:26:35.078+07:00  INFO 24840 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:26:35.083+07:00  INFO 24840 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:26:35.083+07:00  INFO 24840 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:26:35.091+07:00  INFO 24840 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:26:44.312+07:00  INFO 1092 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 1092 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:26:44.314+07:00  INFO 1092 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:26:45.334+07:00  INFO 1092 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:26:45.406+07:00  INFO 1092 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:26:46.027+07:00  INFO 1092 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:26:46.039+07:00  INFO 1092 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:26:46.039+07:00  INFO 1092 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:26:46.130+07:00  INFO 1092 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:26:46.131+07:00  INFO 1092 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2025-06-21T12:26:46.390+07:00  INFO 1092 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:26:46.440+07:00  INFO 1092 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:26:46.469+07:00  INFO 1092 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:26:46.712+07:00  INFO 1092 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:26:46.744+07:00  INFO 1092 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:26:46.942+07:00  INFO 1092 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53ba1175
+2025-06-21T12:26:46.942+07:00  INFO 1092 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:26:46.973+07:00  WARN 1092 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:26:46.973+07:00  WARN 1092 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:26:47.000+07:00  INFO 1092 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:26:47.627+07:00  INFO 1092 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:26:47.673+07:00  INFO 1092 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:26:48.265+07:00  WARN 1092 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:26:48.320+07:00  INFO 1092 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:26:48.822+07:00  INFO 1092 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:26:48.827+07:00  INFO 1092 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 5.141 seconds (process running for 6.562)
+2025-06-21T12:30:37.498+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:30:37.498+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:30:37.498+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-21T12:30:37.582+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Fetching page 1
+2025-06-21T12:30:37.879+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Booking Page size: Page 2 of 1 containing UNKNOWN instances
+2025-06-21T12:30:37.879+07:00  INFO 1092 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:30:37.946+07:00  WARN 1092 --- [Assessment] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-06-21T12:33:08.270+07:00  INFO 1092 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:33:08.398+07:00  INFO 1092 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:33:08.408+07:00  INFO 1092 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:33:08.410+07:00  INFO 1092 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:33:08.419+07:00  INFO 1092 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:33:16.193+07:00  INFO 15016 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 15016 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:33:16.197+07:00  INFO 15016 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:33:17.100+07:00  INFO 15016 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:33:17.178+07:00  INFO 15016 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:33:17.746+07:00  INFO 15016 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:33:17.760+07:00  INFO 15016 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:33:17.760+07:00  INFO 15016 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:33:17.817+07:00  INFO 15016 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:33:17.817+07:00  INFO 15016 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1572 ms
+2025-06-21T12:33:18.029+07:00  INFO 15016 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:33:18.097+07:00  INFO 15016 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:33:18.119+07:00  INFO 15016 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:33:18.346+07:00  INFO 15016 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:33:18.378+07:00  INFO 15016 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:33:18.534+07:00  INFO 15016 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@300a38e7
+2025-06-21T12:33:18.534+07:00  INFO 15016 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:33:18.565+07:00  WARN 15016 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:33:18.574+07:00  WARN 15016 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:33:18.590+07:00  INFO 15016 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:33:19.159+07:00  INFO 15016 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:33:19.191+07:00  INFO 15016 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:33:19.832+07:00  WARN 15016 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:33:19.885+07:00  INFO 15016 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:33:20.404+07:00  INFO 15016 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:33:20.414+07:00  INFO 15016 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 4.787 seconds (process running for 5.37)
+2025-06-21T12:33:28.674+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:33:28.674+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:33:28.676+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-21T12:33:28.706+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Fetching page 1
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Booking Page size: Page 2 of 1 containing UNKNOWN instances
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Current Page Number: 2
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Elements: 3
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Elements in this page: 0
+2025-06-21T12:33:28.810+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:33:28.839+07:00  WARN 15016 --- [Assessment] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-06-21T12:34:32.106+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Fetching page 2
+2025-06-21T12:34:32.116+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Booking Page size: Page 3 of 1 containing UNKNOWN instances
+2025-06-21T12:34:32.117+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Current Page Number: 3
+2025-06-21T12:34:32.120+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:34:32.120+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Total Elements: 3
+2025-06-21T12:34:32.120+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Elements in this page: 0
+2025-06-21T12:34:32.120+07:00  INFO 15016 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Page size: 0
+2025-06-21T12:37:00.878+07:00  INFO 15016 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:37:01.265+07:00  INFO 15016 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:37:01.269+07:00  INFO 15016 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:37:01.269+07:00  INFO 15016 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:37:01.281+07:00  INFO 15016 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:39:05.738+07:00  INFO 5168 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 5168 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:39:05.738+07:00  INFO 5168 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:39:06.703+07:00  INFO 5168 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:39:06.775+07:00  INFO 5168 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:39:07.407+07:00  INFO 5168 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:39:07.424+07:00  INFO 5168 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:39:07.424+07:00  INFO 5168 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:39:07.488+07:00  INFO 5168 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:39:07.488+07:00  INFO 5168 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2025-06-21T12:39:07.696+07:00  INFO 5168 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:39:07.756+07:00  INFO 5168 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:39:07.795+07:00  INFO 5168 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:39:08.078+07:00  INFO 5168 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:39:08.117+07:00  INFO 5168 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:39:08.328+07:00  INFO 5168 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3866c96e
+2025-06-21T12:39:08.330+07:00  INFO 5168 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:39:08.369+07:00  WARN 5168 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:39:08.370+07:00  WARN 5168 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:39:08.392+07:00  INFO 5168 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:39:09.095+07:00  INFO 5168 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:39:09.135+07:00  INFO 5168 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:39:09.651+07:00  WARN 5168 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:39:09.709+07:00  INFO 5168 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:39:10.229+07:00  INFO 5168 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:39:10.239+07:00  INFO 5168 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 5.081 seconds (process running for 5.689)
+2025-06-21T12:39:42.179+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:39:42.179+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:39:42.181+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-21T12:39:42.218+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Fetching page request: 1
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Current Page Number: 2
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Elements: 3
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Elements in this page: 0
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Has Next Page: false
+2025-06-21T12:39:42.309+07:00  INFO 5168 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Has Previous Page: true
+2025-06-21T12:41:45.870+07:00  INFO 5168 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:41:46.018+07:00  INFO 5168 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:41:46.019+07:00  INFO 5168 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:41:46.019+07:00  INFO 5168 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:41:46.028+07:00  INFO 5168 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:41:53.198+07:00  INFO 12176 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 12176 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:41:53.200+07:00  INFO 12176 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:41:54.172+07:00  INFO 12176 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:41:54.249+07:00  INFO 12176 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:41:54.924+07:00  INFO 12176 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:41:54.935+07:00  INFO 12176 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:41:54.935+07:00  INFO 12176 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:41:55.005+07:00  INFO 12176 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:41:55.005+07:00  INFO 12176 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1730 ms
+2025-06-21T12:41:55.238+07:00  INFO 12176 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:41:55.308+07:00  INFO 12176 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:41:55.328+07:00  INFO 12176 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:41:55.562+07:00  INFO 12176 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:41:55.594+07:00  INFO 12176 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:41:55.758+07:00  INFO 12176 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ad896f7
+2025-06-21T12:41:55.763+07:00  INFO 12176 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:41:55.790+07:00  WARN 12176 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:41:55.790+07:00  WARN 12176 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:41:55.808+07:00  INFO 12176 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:41:56.384+07:00  INFO 12176 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:41:56.418+07:00  INFO 12176 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:41:57.008+07:00  WARN 12176 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:41:57.058+07:00  INFO 12176 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:41:57.558+07:00  INFO 12176 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:41:57.568+07:00  INFO 12176 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 4.99 seconds (process running for 5.591)
+2025-06-21T12:42:00.111+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:42:00.118+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:42:00.118+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-21T12:42:00.151+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Fetching page request: 1
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Current Page Number: 2
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Total Elements: 3
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Elements in this page: 0
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Has Next Page: false
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Has Previous Page: true
+2025-06-21T12:42:00.268+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-1] c.j.a.controller.BookController          : Has Context : []
+2025-06-21T12:46:09.549+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Fetching page request: 1
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Current Page Number: 2
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Total Elements: 4
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Elements in this page: 0
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Has Next Page: false
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Has Previous Page: true
+2025-06-21T12:46:09.562+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-6] c.j.a.controller.BookController          : Has Context : []
+2025-06-21T12:46:13.939+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-4] c.j.a.controller.BookController          : Fetching all books
+2025-06-21T12:46:13.977+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-4] c.j.a.controller.BookController          : Book fetched: 4
+2025-06-21T12:47:29.979+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Fetching page request: 0
+2025-06-21T12:47:29.991+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Current Page Number: 1
+2025-06-21T12:47:29.991+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Total Pages: 1
+2025-06-21T12:47:29.991+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Total Elements: 4
+2025-06-21T12:47:29.991+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Elements in this page: 4
+2025-06-21T12:47:29.991+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Has Next Page: false
+2025-06-21T12:47:29.993+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Has Previous Page: false
+2025-06-21T12:47:29.993+07:00  INFO 12176 --- [Assessment] [http-nio-8080-exec-5] c.j.a.controller.BookController          : Has Context : [Book(id=2, no=B001, name=Java Programming, authorId=2, type=Education), Book(id=3, no=B002, name=React Programming, authorId=2, type=Education), Book(id=4, no=B003, name=Javascript Programming, authorId=2, type=Education), Book(id=5, no=B004, name=Html , authorId=3, type=Education)]
+2025-06-21T12:48:06.392+07:00  INFO 12176 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:48:06.535+07:00  INFO 12176 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:48:06.535+07:00  INFO 12176 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:48:06.535+07:00  INFO 12176 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:48:06.546+07:00  INFO 12176 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-21T12:48:13.823+07:00  INFO 10488 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Starting AssessmentApplication using Java 18.0.2 with PID 10488 (C:\Thai\2025\June\Linda\Java\git\JavaAssessment\target\classes started by yekyawaung in C:\Thai\2025\June\Linda\Java\git\JavaAssessment)
+2025-06-21T12:48:13.829+07:00  INFO 10488 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-21T12:48:14.792+07:00  INFO 10488 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21T12:48:14.867+07:00  INFO 10488 --- [Assessment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2025-06-21T12:48:15.470+07:00  INFO 10488 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-21T12:48:15.475+07:00  INFO 10488 --- [Assessment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-21T12:48:15.475+07:00  INFO 10488 --- [Assessment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-21T12:48:15.535+07:00  INFO 10488 --- [Assessment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-21T12:48:15.535+07:00  INFO 10488 --- [Assessment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1641 ms
+2025-06-21T12:48:15.741+07:00  INFO 10488 --- [Assessment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-21T12:48:15.813+07:00  INFO 10488 --- [Assessment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-21T12:48:15.846+07:00  INFO 10488 --- [Assessment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-21T12:48:16.105+07:00  INFO 10488 --- [Assessment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21T12:48:16.136+07:00  INFO 10488 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-21T12:48:16.298+07:00  INFO 10488 --- [Assessment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e4d0a0b
+2025-06-21T12:48:16.298+07:00  INFO 10488 --- [Assessment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-21T12:48:16.326+07:00  WARN 10488 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21T12:48:16.326+07:00  WARN 10488 --- [Assessment] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-21T12:48:16.352+07:00  INFO 10488 --- [Assessment] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-21T12:48:16.939+07:00  INFO 10488 --- [Assessment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-21T12:48:16.971+07:00  INFO 10488 --- [Assessment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:48:17.535+07:00  WARN 10488 --- [Assessment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21T12:48:17.589+07:00  INFO 10488 --- [Assessment] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-21T12:48:18.051+07:00  INFO 10488 --- [Assessment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-21T12:48:18.062+07:00  INFO 10488 --- [Assessment] [main] c.java.assessment.AssessmentApplication  : Started AssessmentApplication in 4.803 seconds (process running for 5.435)
+2025-06-21T12:48:27.972+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-21T12:48:27.973+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-21T12:48:27.976+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-21T12:48:28.056+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-2] c.j.a.controller.BookController          : Fetching page request: 1
+2025-06-21T12:48:33.545+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-3] c.j.a.controller.BookController          : Fetching page request: 2
+2025-06-21T12:48:36.960+07:00  INFO 10488 --- [Assessment] [http-nio-8080-exec-4] c.j.a.controller.BookController          : Fetching page request: 1
+2025-06-21T12:53:28.451+07:00  INFO 10488 --- [Assessment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-21T12:53:28.579+07:00  INFO 10488 --- [Assessment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-21T12:53:28.583+07:00  INFO 10488 --- [Assessment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21T12:53:28.587+07:00  INFO 10488 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-21T12:53:28.593+07:00  INFO 10488 --- [Assessment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
