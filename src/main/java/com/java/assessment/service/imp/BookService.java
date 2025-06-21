@@ -10,6 +10,7 @@ import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,7 @@ public class BookService implements IBookService {
     @Autowired
     protected Bookcomponent bookComponent;
 
+    
     private static final Logger logger = LoggerFactory.getLogger(BookService.class);
 
     @Override
@@ -93,13 +95,11 @@ public class BookService implements IBookService {
 
     @Override
     public Author callauthorbyId(Long Id) {
-//        RestTemplate restTemplate = new RestTemplate();
-//        return restTemplate.getForObject("http://localhost:8080/api/author?Id=1", Author.class);
 
         RestTemplate restTemplate = new RestTemplate();
 
         // URL with query parameter
-        String url = "http://localhost:8080/api/author?Id=1";
+        String url = "http://localhost:8080/api/author?Id="+Id;
 
         // Call GET and map response to Author
         ResponseEntity<Author> response = restTemplate.getForEntity(url, Author.class);
