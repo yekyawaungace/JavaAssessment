@@ -10,7 +10,7 @@ public class Authorcomponent {
     @Autowired
     private AuthorRepository authorRepository;
 
-    public boolean checkexisting(Long id ){
+    public boolean checkexisting(int id ){
         if (authorRepository.existsById(id) == true){
             return true;
         }

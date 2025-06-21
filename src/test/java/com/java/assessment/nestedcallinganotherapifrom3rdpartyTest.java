@@ -35,7 +35,7 @@ public class nestedcallinganotherapifrom3rdpartyTest {
     @Test
     void testCallAuthorById_success() {
         // Arrange
-        Long authorId = 1L;
+        int authorId = 1;
         Author expectedAuthor = new Author(authorId, "brown");
         String url = "http://localhost:8080/api/author?Id=" + authorId;
 

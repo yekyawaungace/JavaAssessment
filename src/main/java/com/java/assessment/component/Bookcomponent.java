@@ -12,7 +12,7 @@ public class Bookcomponent {
     @Autowired
     private BookRepository bookRepository;
 
-    public boolean checkexisting(Long id ){
+    public boolean checkexisting(int id ){
         if (bookRepository.existsById(id) == true){
             return true;
         }

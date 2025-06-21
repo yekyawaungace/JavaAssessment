@@ -10,14 +10,14 @@ import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.data.domain.Page;
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class BookService implements IBookService {
@@ -27,10 +27,12 @@ public class BookService implements IBookService {
     @Autowired
     protected Bookcomponent bookComponent;
 
-    
+    @Value("${author.api.url}")
+    private String url;
+
     private static final Logger logger = LoggerFactory.getLogger(BookService.class);
 
-    @Override
+    @Transactional
     public boolean save(Book _book) {
         try {
             bookRepository.save(_book);
@@ -47,14 +49,14 @@ public class BookService implements IBookService {
         return bookRepository.findAll();
     }
 
-    @Override
-    public Book selectBookbyid(Long id) {
+    @Transactional
+    public Book selectBookbyid(int id) {
         Book _book = bookRepository.findById(id).orElse(null);
         return _book;
     }
 
-    @Override
-    public boolean delete(Long id) {
+    @Transactional
+    public boolean delete(int id) {
         if (bookComponent.checkexisting(id) == true)
         {
             try {
@@ -71,7 +73,7 @@ public class BookService implements IBookService {
         return true;
     }
 
-    @Override
+    @Transactional
     public boolean update(Book _book) {
         if (bookComponent.checkexisting(_book.getId()) == true)
         {
@@ -94,12 +96,11 @@ public class BookService implements IBookService {
     }
 
     @Override
-    public Author callauthorbyId(Long Id) {
+    public Author callauthorbyId(int Id) {
 
         RestTemplate restTemplate = new RestTemplate();
 
-        // URL with query parameter
-        String url = "http://localhost:8080/api/author?Id="+Id;
+        url = url + Id;
 
         // Call GET and map response to Author
         ResponseEntity<Author> response = restTemplate.getForEntity(url, Author.class);

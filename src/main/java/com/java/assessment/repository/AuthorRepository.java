@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 
-public interface AuthorRepository extends JpaRepository<Author, Long> {
-    Author findByid(Long Id);
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
+    Author findByid(int Id);
 }

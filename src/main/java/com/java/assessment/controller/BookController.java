@@ -7,6 +7,7 @@ import com.java.assessment.service.IBookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,8 @@ public class BookController {
 
     @Autowired
     private IBookService bookService;
+
+
     private static final Logger logger = LoggerFactory.getLogger(BookController.class);
 
     @PostMapping
@@ -53,7 +56,7 @@ public class BookController {
     }
 
     @DeleteMapping
-    public ResponseEntity<String> delete(@RequestParam Long  Id){
+    public ResponseEntity<String> delete(@RequestParam(name = "Id") int Id){
 
         if (bookService.delete(Id) == true)
         {
@@ -67,7 +70,8 @@ public class BookController {
     }
 
     @GetMapping("/selectedbyid")
-    public ResponseEntity<Book> selectbyId(@RequestParam Long  Id){
+    public ResponseEntity<Book> selectbyId(@RequestParam(name = "Id") int Id){
+        logger.info("start Book selectbyId  : {}" , Id);
         Book book = bookService.selectBookbyid(Id);
         logger.info("Book selectbyId  : {}" , Id);
         if (book != null){
@@ -87,19 +91,19 @@ public class BookController {
     }
 
     @GetMapping("/page")
-    public ResponseEntity<Page<Book>> getPaginated(@RequestParam(defaultValue = "0") int page) {
+    public ResponseEntity<Page<Book>> getPaginated(@RequestParam(name = "page",defaultValue = "0") int page) {
         logger.info("Fetching page {}", page);
         Page<Book> books = bookService.getPaginatedBooks(page);
         logger.info("Page size: {}", books.getContent().size());
         return ResponseEntity.ok(books);
     }
 
+
     @GetMapping("/nestedcallinganotherapifrom3rdparty")
-    public ResponseEntity<Author> nestedcallinganotherapifrom3rdparty(@RequestParam long Id) {
+    public ResponseEntity<Author> nestedcallinganotherapifrom3rdparty(@RequestParam(name = "Id") int Id){
         logger.info("Calling nested calling another api from 3rd party ...");
         Author author = bookService.callauthorbyId(Id);
         logger.info("Received from nested calling another api from 3rd party: {}", author);
-        //return ResponseEntity.ok(result);
 
         if (author != null){
             return new ResponseEntity<Author>(author, HttpStatus.OK);
@@ -108,4 +112,5 @@ public class BookController {
         }
 
     }
+
 }

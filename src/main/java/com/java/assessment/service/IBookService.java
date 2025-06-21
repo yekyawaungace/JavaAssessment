@@ -15,10 +15,10 @@ public interface IBookService {
 
     boolean save(Book _book);
     List<Book> getAllBooks();
-    Book selectBookbyid(Long id);
-    boolean delete(Long id);
+    Book selectBookbyid(int id);
+    boolean delete(int id);
     boolean update(Book _book);
     Page<Book> getPaginatedBooks(int page);
     //callnestedcallinganotherapifrom3rdparty
-    public Author callauthorbyId(Long Id);
+    public Author callauthorbyId(int Id);
 }

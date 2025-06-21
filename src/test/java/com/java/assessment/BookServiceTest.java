@@ -36,10 +36,10 @@ public class BookServiceTest {
     @Test
     public void testSave_success() {
         Book book = new Book();
-        book.setId(2L);
+        book.setId(2);
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
         when(bookRepository.save(book)).thenReturn(book);
@@ -56,7 +56,7 @@ public class BookServiceTest {
         Book book = new Book();
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
         when(bookRepository.save(book)).thenThrow(new RuntimeException("DB Error"));
@@ -87,15 +87,15 @@ public class BookServiceTest {
     public void testSelectBookById_found() {
         Book book = new Book();
 
-        book.setId(2L);
+        book.setId(2);
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
-        when(bookRepository.findById(2L)).thenReturn(Optional.of(book));
+        when(bookRepository.findById(2)).thenReturn(Optional.of(book));
 
-        Book result = bookService.selectBookbyid(2L);
+        Book result = bookService.selectBookbyid(2);
 
         assertNotNull(result);
         assertEquals("B005", result.getNo());
@@ -103,9 +103,9 @@ public class BookServiceTest {
 
     @Test
     public void testSelectBookById_notFound() {
-        when(bookRepository.findById(99L)).thenReturn(Optional.empty());
+        when(bookRepository.findById(99)).thenReturn(Optional.empty());
 
-        Book result = bookService.selectBookbyid(99L);
+        Book result = bookService.selectBookbyid(99);
 
         assertNull(result);
     }
@@ -113,19 +113,19 @@ public class BookServiceTest {
     // ---------- Test delete(Long) ----------
     @Test
     public void testDelete_success() {
-        when(bookComponent.checkexisting(1L)).thenReturn(true);
-        doNothing().when(bookRepository).deleteById(1L);
+        when(bookComponent.checkexisting(1)).thenReturn(true);
+        doNothing().when(bookRepository).deleteById(1);
 
-        boolean result = bookService.delete(1L);
+        boolean result = bookService.delete(1);
 
         assertTrue(result);
     }
 
     @Test
     public void testDelete_notExists() {
-        when(bookComponent.checkexisting(99L)).thenReturn(false);
+        when(bookComponent.checkexisting(99)).thenReturn(false);
 
-        boolean result = bookService.delete(99L);
+        boolean result = bookService.delete(99);
 
         assertFalse(result);
         verify(bookRepository, never()).deleteById(any());
@@ -133,10 +133,10 @@ public class BookServiceTest {
 
     @Test
     public void testDelete_exception() {
-        when(bookComponent.checkexisting(1L)).thenReturn(true);
-        doThrow(new RuntimeException("DB Error")).when(bookRepository).deleteById(1L);
+        when(bookComponent.checkexisting(1)).thenReturn(true);
+        doThrow(new RuntimeException("DB Error")).when(bookRepository).deleteById(1);
 
-        boolean result = bookService.delete(1L);
+        boolean result = bookService.delete(1);
 
         assertFalse(result);
     }
@@ -145,13 +145,13 @@ public class BookServiceTest {
     @Test
     public void testUpdate_success() {
         Book book = new Book();
-        book.setId(2L);
+        book.setId(2);
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
-        when(bookComponent.checkexisting(2L)).thenReturn(true);
+        when(bookComponent.checkexisting(2)).thenReturn(true);
         when(bookRepository.save(book)).thenReturn(book);
 
         boolean result = bookService.update(book);
@@ -163,13 +163,13 @@ public class BookServiceTest {
     public void testUpdate_notExists() {
         Book book = new Book();
 
-        book.setId(2L);
+        book.setId(2);
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
-        when(bookComponent.checkexisting(2L)).thenReturn(false);
+        when(bookComponent.checkexisting(2)).thenReturn(false);
 
         boolean result = bookService.update(book);
 
@@ -181,13 +181,13 @@ public class BookServiceTest {
     public void testUpdate_exception() {
         Book book = new Book();
 
-        book.setId(3L);
+        book.setId(3);
         book.setNo("B005");
         book.setName("Java Programming");
-        book.setAuthorId(3L);
+        book.setAuthorId(3);
         book.setType("Education");
 
-        when(bookComponent.checkexisting(3L)).thenReturn(true);
+        when(bookComponent.checkexisting(3)).thenReturn(true);
         when(bookRepository.save(book)).thenThrow(new RuntimeException());
 
         boolean result = bookService.update(book);

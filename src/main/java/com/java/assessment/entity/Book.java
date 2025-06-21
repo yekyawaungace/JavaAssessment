@@ -13,13 +13,13 @@ public class Book  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     private String no;
 
     private String name;
 
-    private Long authorId;
+    private int authorId;
 
     private String type;
 }

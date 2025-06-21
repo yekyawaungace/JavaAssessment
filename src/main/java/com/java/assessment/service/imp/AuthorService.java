@@ -4,6 +4,7 @@ import com.java.assessment.component.Authorcomponent;
 import com.java.assessment.component.Bookcomponent;
 import com.java.assessment.entity.Author;
 import com.java.assessment.repository.AuthorRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,8 @@ public class AuthorService {
     @Autowired
     protected Authorcomponent authorcomponent;
 
-    public Author getAuthorByID(Long Id) {
+    @Transactional
+    public Author getAuthorByID(int Id) {
 
         return authorRepository.findByid(Id);
     }

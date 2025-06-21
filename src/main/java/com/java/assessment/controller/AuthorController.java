@@ -20,7 +20,7 @@ public class AuthorController {
     private static final Logger logger = LoggerFactory.getLogger(AuthorController.class);
 
     @GetMapping
-    public ResponseEntity<Author> getAuthorById(@RequestParam Long Id) {
+    public ResponseEntity<Author> getAuthorById(@RequestParam(name = "Id") int Id){
         logger.info("Fetching all author by id :  {} ", Id);
         Author author = authorService.getAuthorByID(Id);
         logger.info("Author fetched: {}", author);
